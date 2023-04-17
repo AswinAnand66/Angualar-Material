@@ -10,12 +10,23 @@ import { ButtonModule } from './button/button.module';
 import { MaterialModule } from './material/material.module';
 import { TypographyModule } from './typography/typography.module';
 import { TypographyComponent } from './typography/typography.component';
+import { IconsComponent } from './icons/icons.component';
+import { IconsModule } from './icons/icons.module';
+import { BadgesComponent } from './badges/badges.component';
+import { BadgesModule } from './badges/badges.module';
+import { SpinnerComponent } from './spinner/spinner.component';
+import { SpinnerModule } from './spinner/spinner.module';
+import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ButtonComponent,
-    TypographyComponent
+    TypographyComponent,
+    IconsComponent,
+    BadgesComponent,
+    SpinnerComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
@@ -25,6 +36,9 @@ import { TypographyComponent } from './typography/typography.component';
     ButtonModule,
     TypographyModule,
     MaterialModule,
+    IconsModule,
+    BadgesModule,
+    SpinnerModule
   ],
   providers: [],
   bootstrap: [AppComponent]
